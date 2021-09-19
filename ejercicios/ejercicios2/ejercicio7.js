@@ -1,0 +1,1 @@
+// ¿Cuántos dígitos tiene el número 20!? (Pista: Piensa en la expansion decimal [ex. 12345 = 1*10000 + 2*1000 + 3*100 + 4*10 + 5*1])
