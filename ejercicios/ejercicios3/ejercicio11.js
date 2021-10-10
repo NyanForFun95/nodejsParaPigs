@@ -1,0 +1,1 @@
+// escribe una función que calcule el elemento a_n de la regla a_0 = 0, a_(n+1) = a_n + 1 + a_n, genera un array con los primeros 20 elementos aumentados en 1, ¿Qué puedes notasr de éstos elementos?
