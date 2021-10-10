@@ -36,3 +36,25 @@ function sum(a,b=1){
 
 // print(sum(2**12,-64));
 // print(sum(1));
+
+// las funciones tambien pueden ser recursivas. (i.e. que se llamen a si mismas)
+
+function factorial(n){
+    if(n == 1){
+        return 1;
+    } else {
+        return factorial(n-1)*n;
+    };
+};
+
+// print(factorial(6));
+
+function fibonacci(n){
+    if(n > 1){
+        return fibonacci(n-2) + fibonacci(n-1);
+    }else{
+        return 1
+    };
+};
+
+// console.log(fibonacci(10),fibonacci(11),fibonacci(12));
