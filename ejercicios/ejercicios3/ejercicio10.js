@@ -9,20 +9,32 @@
     
 //};
 
+function fibonacci(number){
+  if(number==1){
+    return [1];
+  }else{
+    let fibonacci = [1,1];
+    while(fibonacci.length < number){
+      fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
+    };
+    return fibonacci;
+  };
+};
+
 
 function divisores (length) {
-   let aux = length;
-   while (aux + aux  >100){
-      length++;
-      aux = 1;
-   };
-   return length;
+  let aux = length;
+  while (aux + aux  >100){
+    length++;
+    aux = 1;
+  };
+  return length;
 };
 
-var fibonacci = [1,1];
+// var fibonacci = [1,1];
 
-while(divisores(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2])<100){
-   fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
-};
+// while(divisores(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2])<100){
+//    fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
+// };
 
 console.log(fibonacci.length)
