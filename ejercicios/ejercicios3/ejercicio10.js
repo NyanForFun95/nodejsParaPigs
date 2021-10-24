@@ -9,18 +9,6 @@
     
 //};
 
-function fibonacci(number){
-  if(number==1){
-    return [1];
-  }else{
-    let fibonacci = [1,1];
-    while(fibonacci.length < number){
-      fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
-    };
-    return fibonacci;
-  };
-};
-
 
 function divisores (length) {
   let aux = length;
