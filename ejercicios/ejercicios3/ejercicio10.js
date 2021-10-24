@@ -9,20 +9,49 @@
     
 //};
 
+function fibonacci(number){
+  if(number==1){
+    return [1];
+  }else{
+    let fibonacci = [1,1];
+    while(fibonacci.length < number){
+      fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
+    };
+    return fibonacci;
 
-function divisores (length) {
-  let aux = length;
-  while (aux + aux  >100){
-    length++;
-    aux = 1;
   };
-  return length;
+
 };
 
-// var fibonacci = [1,1];
+function countDivisors(number){
+  let count = 0;
+  for(let i = 1; i<=number; i++){
+      if(number%i==0){
+          count++;
+      };
+  };
+  return count;
+};
 
-// while(divisores(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2])<100){
-//    fibonacci.push(fibonacci[fibonacci.length-1]+fibonacci[fibonacci.length-2]);
-// };
+var numero = 100;
 
-console.log(fibonacci.length)
+for(var a = 1; a<=100; a++){
+  if(a%1==0){
+      console.log(a);
+  }else{
+      console.log('):')
+  };
+};
+
+
+console.log('Los números', fibonacci(numero), 'tienen', countDivisors(), 'divisores');
+
+
+//function divisores (length) {
+//  let aux = length;
+//  while (aux + aux  >100){
+//    length++;
+//    aux = 1;
+//  };
+//  return length;
+//};
