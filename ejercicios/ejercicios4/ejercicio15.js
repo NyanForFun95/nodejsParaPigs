@@ -1,0 +1,1 @@
+// project euler ej.4: Un número palíndromo es un numero que se escribe igual al derecho y al revez. El número palíndromo más grande que se puede ver como producto de 2 números de 2 cifras es 9009 = 91 * 99. ¿Cuál es el número palíndromo más grande que se puede ver como producto de dos números de 3 cifas?

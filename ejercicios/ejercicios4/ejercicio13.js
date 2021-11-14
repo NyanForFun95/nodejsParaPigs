@@ -1,0 +1,1 @@
+// project euler ej.2: Considera todos los terminos de fibonacci que no exceden 4 000 000 (4 millones), encuentra la suma de todos los terminos pares.

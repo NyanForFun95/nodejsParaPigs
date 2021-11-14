@@ -1,0 +1,1 @@
+// project euler ej.1: Encuentra la suma de todos los numeros del 1 al 100 que son multiplos de 3 o 5.
