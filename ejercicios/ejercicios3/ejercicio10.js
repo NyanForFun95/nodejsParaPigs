@@ -24,8 +24,8 @@ function fibonacci(number){
 };
 
 function countDivisors(number){
-  let count = 0;
-  for(let i = 1; i<=number; i++){
+  let count = 1;
+  for(let i = 1; i<=number/2; i++){
       if(number%i==0){
           count++;
       };
@@ -33,18 +33,18 @@ function countDivisors(number){
   return count;
 };
 
-//var numero = 100;
+var numero = 44;
 
-for(var a = 1; a<=100; a++){
-  if(a%1==0){
-      console.log(a);
-  }else{
-      console.log('):')
-  };
-//};
+// for(var a = 1; a<=100; a++){
+//   if(a%1==0){
+//       console.log(a);
+//   }else{
+//       console.log('):')
+//   };
+// };
 
 
-console.log('Los números', fibonacci(numero), 'tienen', countDivisors(), 'divisores');
+// console.log('Los números', fibonacci(numero), 'tienen', countDivisors(), 'divisores');
 
 
 //function divisores (length) {
@@ -55,3 +55,11 @@ console.log('Los números', fibonacci(numero), 'tienen', countDivisors(), 'divis
 //  };
 //  return length;
 //};
+
+var lista = fibonacci(numero);
+
+// for(i in lista){
+//   lista[i] = countDivisors(lista[i]);
+// };
+
+console.log(lista.map(countDivisors));
