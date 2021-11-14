@@ -33,7 +33,7 @@ function countDivisors(number){
   return count;
 };
 
-var numero = 100;
+//var numero = 100;
 
 for(var a = 1; a<=100; a++){
   if(a%1==0){
@@ -41,7 +41,7 @@ for(var a = 1; a<=100; a++){
   }else{
       console.log('):')
   };
-};
+//};
 
 
 console.log('Los números', fibonacci(numero), 'tienen', countDivisors(), 'divisores');
